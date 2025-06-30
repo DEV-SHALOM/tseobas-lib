@@ -41,7 +41,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
         passMessage.classList.add("block");
         passMessage.textContent = "Login Successful... Happy Learning " + "🎉";
         setTimeout(() => {
-          window.location.href = "./ourdatabase.com.ng/tut/databases.html";
+          window.location.href = "./tut-db/tut/databases.html";
         }, 3000);
       } else if (userData.password !== inputPassword) {
         passMessage.classList.remove("hidden");
