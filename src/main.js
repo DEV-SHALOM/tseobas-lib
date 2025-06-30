@@ -14,8 +14,8 @@ import {
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const inputUsername = document.getElementById("username").value;
-  const inputPassword = document.getElementById("password").value;
+  const inputUsername = document.getElementById("username").value.trim();
+  const inputPassword = document.getElementById("password").value.trim();
   const passMessage = document.getElementById("pass-message");
 
   try {
