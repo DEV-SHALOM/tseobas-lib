@@ -1,21 +1,21 @@
-let password = document.getElementById("password")
+let password = document.getElementById("password");
 let icon = document.getElementById("icon");
 let passButton = document.getElementById("pass-button");
-let hidden = true;
+let checkbox = document.getElementById("checkbox");
+// let hidden = true;
 
 passButton.addEventListener("click", () => {
-    if (hidden === true) {
+  if (checkbox.checked === false) {
     icon.classList.remove("fa-eye");
     icon.classList.add("fa-eye-slash");
-    password.setAttribute("type", "text")
-    hidden = false;
-} else if (hidden === false) {
+    password.setAttribute("type", "text");
+    checkbox.checked = true;
+  } else if (checkbox.checked === true) {
     icon.classList.remove("fa-eye-slash");
     icon.classList.add("fa-eye");
-    password.setAttribute("type", "password")
-      hidden = true;
-    }
-    else{
+    password.setAttribute("type", "password");
+    checkbox.checked = false;
+  } else {
     // ~~~~~~~~
-    }
+  }
 });
