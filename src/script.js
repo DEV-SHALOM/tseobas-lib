@@ -1,8 +1,9 @@
 let password = document.getElementById("password")
 let icon = document.getElementById("icon");
+let passButton = document.getElementById("pass-button");
 let hidden = true;
 
-icon.addEventListener("click", () => {
+passButton.addEventListener("click", () => {
     if (hidden === true) {
     icon.classList.remove("fa-eye");
     icon.classList.add("fa-eye-slash");
