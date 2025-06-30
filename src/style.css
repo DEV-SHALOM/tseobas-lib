@@ -90,6 +90,7 @@ button:hover {
 
 #pass-button{
   outline: none;
+  background-color: transparent;
 }
 
 #pass-button:hover{
